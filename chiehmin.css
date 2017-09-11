@@ -371,7 +371,7 @@ nav {
     background-size: cover;
 }
 
-@media (max-width:1000px) {
+@media only screen and (max-width:768px) {
     .Scene-sky {
         background-size: 100% 97%;
         background-repeat: repeat-x;
