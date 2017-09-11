@@ -447,10 +447,11 @@ nav {
         display: grid;
         grid-template-columns: 1fr 1fr ;
         grid-template-rows: 200px 200px 200px;
+        grid-row-gap: 20px;
 
     }
 
     #grid button {
-        margin: 10px;
+        margin-top: 10px;
     }
 }
