@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Chiehmin Wei</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" href="chiehmin.css">
+</head>
+<body>
+	<div class="Scene">
+		<div class="Scene-sky" role="presentation">
+		</div>
+		<canvas class="Scene-stars" role="presentation">
+		</canvas>
+		<canvas class="Scene-mountains" data-stop-on-scroll="true" role="presentation">
+		</canvas>
+	</div>
+	<nav>
+		<a class="Nav-link" onclick="$(window).scrollTo($('#about'), 400);">
+			<span>About
+			</span>
+		</a>
+		<a class="Nav-link" onclick="$(window).scrollTo($('#portfolio'), 400);"> 
+			<span>Portfolio
+			</span>
+		</a>
+		<a class="Nav-link" onclick="$(window).scrollTo($('#contact'), 400);"> 
+			<span>Contact
+			</span>
+		</a>
+	</nav>
+	<div class="Title">
+		<h1>Chiehmin Wei</h1>
+		<p>Software Engineer</p>
+	</div>
+
+	<div id="container">	
+		<section id="about">
+			<h2>About</h2>
+			<p>Hi, I'm Jimmy. I am currently a CS major studying at Bucknell University.</p>
+			<div>
+				<a href="https://www.dropbox.com/s/82juxjn5sac1qxn/resume.pdf?dl=0" class="btn btn-lg" title="Resume">
+					<span id="resume"><i class="zmdi zmdi-file"></i> Resume</span>
+				</a>
+			</div>
+		</section>
+
+		<section id="portfolio">
+			<h2>Portfolio</h2>
+			<div id="grid">
+				<button type="button" class="btn btn-lg demo" id="stanfordpic" data-toggle="modal" data-target="#stanford">
+					<div class="overlay-container">
+						<div class="overlay">
+							<i class="zmdi zmdi-zoom-in"></i>
+						</div>
+					</div>
+				</button>
+				<button type="button" class="btn btn-lg demo" id="graphicspic" data-toggle="modal" data-target="#graphics">
+					<div class="overlay-container">
+						<div class="overlay">
+							<i class="zmdi zmdi-zoom-in"></i>
+						</div>
+					</div>
+				</button>
+				<button type="button" class="btn btn-lg demo" id="textpic" data-toggle="modal" data-target="#text">
+					<div class="overlay-container">
+						<div class="overlay">
+							<i class="zmdi zmdi-zoom-in"></i>
+						</div>
+					</div>
+				</button>
+				<button type="button" class="btn btn-lg demo" id="earthquakepic" data-toggle="modal" data-target="#earthquake">
+					<div class="overlay-container">
+						<div class="overlay">
+							<i class="zmdi zmdi-zoom-in"></i>
+						</div>
+					</div>
+				</button>
+				<button type="button" class="btn btn-lg demo" id="collisionpic" data-toggle="modal" data-target="#collision">
+					<div class="overlay-container">
+						<div class="overlay">
+							<i class="zmdi zmdi-zoom-in"></i>
+						</div>
+					</div>
+				</button>
+				<button type="button" class="btn btn-lg demo" id="routepic" data-toggle="modal" data-target="#route">
+					<div class="overlay-container">
+						<div class="overlay">
+							<i class="zmdi zmdi-zoom-in"></i>
+						</div>
+					</div>
+				</button>
+			</div>
+		</section>
+		<section id="contact">
+			<h2>Contact</h2>
+			<div id="social">
+				<a href="https://github.com/cmw025" class="btn btn-lg" ><i class="zmdi zmdi-github-box"></i></a>
+				<a href="https://www.linkedin.com/in/chiehmin-wei-9a037a136/" class="btn btn-lg" ><i class="zmdi zmdi-linkedin-box"></i></a>
+				<a href="mailto:cmw025@bucknell.edu" title="cmw025@bucknell.edu" class="btn btn-lg" ><i class="zmdi zmdi-email"></i></a>
+			</div>
+		</section>
+		<div class="Scene--bottom">
+			<canvas class="Scene-mountains Scene-mountains--bottom">
+			</canvas>
+		</div>
+	</div>
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="stanford" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3 class="modal-title">Stanford Maps</h3>
+				</div>
+				<div class="modal-body">
+					<iframe width="100%" height="394" src="https://www.useloom.com/embed/533f4905254b40cf8950b322cc73ff4e" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+					<p class="modaltext">Interactive map supporting zoom, search, and dragging.</p>
+					<p>Written in Vanilla JavaScript</p>
+					<div>
+						<a href="https://www.dropbox.com/s/82juxjn5sac1qxn/resume.pdf?dl=0" class="btn btn-lg" title="Resume">
+						<span class="source"><i class="zmdi zmdi-github-box"></i>Source Code</span>
+						</a>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="modal fade" id="graphics" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3 class="modal-title">Breathing Cubes</h3>
+				</div>
+				<div class="modal-body">
+					<iframe width="100%" height="490" src="https://www.useloom.com/embed/04aea80f47b442d080eaa212da384519" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<p class="modaltext">Real-time interactive graphics engine.</p> 
+					<p>Written in OpenGL and C++</p>
+					<div>
+						<a href="https://www.dropbox.com/s/82juxjn5sac1qxn/resume.pdf?dl=0" class="btn btn-lg" title="Resume">
+						<span class="source"><i class="zmdi zmdi-github-box"></i>Source Code</span>
+						</a>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="modal fade" id="text" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3 class="modal-title">Autocorrect Text Editor</h3>
+				</div>
+				<div class="modal-body">
+					<iframe width="100%" height="355" src="https://www.useloom.com/embed/474951c55a8d488aa3df775c526c8569" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<p>Text Editor supporting autocorrect on the fly.</p>
+					<p>Written in Java.</p>
+					<div>
+						<a href="https://www.dropbox.com/s/82juxjn5sac1qxn/resume.pdf?dl=0" class="btn btn-lg" title="Resume">
+						<span class="source"><i class="zmdi zmdi-github-box"></i>Source Code</span>
+						</a>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="modal fade" id="earthquake" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3 class="modal-title">Earthquake Info Display</h3>
+				</div>
+				<div class="modal-body">
+					<iframe width="100%" height="521" src="https://www.useloom.com/embed/2b59cfaa557647b6909be61e3f8a4753" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<p>Displays 50 years of earthquake data.</p>
+					<p>Real-time updates from RSS feed. </p>
+					<p>Written in Java.</p>
+					<div>
+						<a href="https://www.dropbox.com/s/82juxjn5sac1qxn/resume.pdf?dl=0" class="btn btn-lg" title="Resume">
+						<span class="source"><i class="zmdi zmdi-github-box"></i>Source Code</span>
+						</a>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="modal fade" id="collision" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3 class="modal-title">Elastic Collision Simulator</h3>
+				</div>
+				<div class="modal-body">
+					<iframe width="100%" height="648" src="https://www.useloom.com/embed/21c5cf0d792f427389eaa10bb5eebce5" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<p>Simulates elastic collision of particles in real time.</p>
+					<p>Written in Python.</p>
+					<div>
+						<a href="https://www.dropbox.com/s/82juxjn5sac1qxn/resume.pdf?dl=0" class="btn btn-lg" title="Resume">
+						<span class="source"><i class="zmdi zmdi-github-box"></i>Source Code</span>
+						</a>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="modal fade" id="route" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3 class="modal-title">Route Planner</h3>
+				</div>
+				<div class="modal-body">
+					<iframe width="100%" height="355" src="https://www.useloom.com/embed/1f47fbc0c6a04593b3c61cf1775caa48" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<p>Route visualizer for search algorithms.</p>
+					<p>Processes 1,000+ road intersections data.</p>
+					<p>Built in Java.</p>
+					<div>
+						<a href="https://www.dropbox.com/s/82juxjn5sac1qxn/resume.pdf?dl=0" class="btn btn-lg" title="Resume">
+						<span class="source"><i class="zmdi zmdi-github-box"></i>Source Code</span>
+						</a>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+<script src="jquery-3.2.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script id="vs" type="x-shader/vertex">attribute vec3 position;void main(){gl_Position=vec4(position,1.0);} </script>
+<script id="fs" type="x-shader/fragment">
+	uniform float t;
+	uniform float s;
+	uniform float sunSize;
+	uniform vec2 r;
+	uniform sampler2D i;
+	float power(float value, float p) {
+		float f = floor(value);
+		float r = value - f;
+		if (r > 0.5) {
+			r = (r * 2.0) - 1.0;
+			r = pow(r, 1.0 / p);
+			r = (r / 2.0) + 0.5;
+		} else {
+			r *= 2.0;
+			r = pow(r, p);
+			r /= 2.0;
+		}
+		return r + f;
+	}
+	vec3 getDisplacement(float dist) {
+		float global = (dist * 6.0) - t * 0.9;
+		float distortion = (sin(global * 2.0 - (t * 0.5)) + 1.0) * 0.55;
+		float distorted = global - (distortion * 0.45);
+		float local = distorted - floor(distorted);
+		float stripedDistance = mod(local * 4.0, 1.0);
+		float striped = (power(local * 4.0, 12.0) + -0.4) / 4.0;
+		return vec3(striped, stripedDistance, local);
+	}
+	void main() {
+		vec2 pos = gl_FragCoord.xy / r;
+		pos.y -= 0.5 / r.y;
+		pos = vec2(pos.x, 1.0 - pos.y);
+		if (pos.y > 0.5) {
+			float dist = (pos.y - 0.5) / 0.5;
+			vec3 displacement = getDisplacement(dist);
+			float w = displacement.x;
+			pos.y += w * 0.35 * dist * s;
+		} else {
+			float sunDistance = (sunSize / r.x) * 0.75;
+			float falloff = 2.5;
+			falloff = 1.0 + falloff;
+			float p = 1.0 - (abs(pos.x - 0.5) / (sunDistance * falloff));
+			if (p > 0.0) {
+				float cutoff = 1.0 - (1.0 / falloff);
+				if (p > cutoff) {
+					p = 1.0;
+				} else {
+					p = (p / cutoff);
+					p = pow(p, 2.0);
+					p *= 0.2;
+				}
+				pos.x += sin((t * 7.0) + (pos.y * 150.0)) * (sunDistance * 0.1) * p * s;
+			}
+		}
+		vec4 textureColor = texture2D(i, pos);
+		float a = textureColor.a;
+		if (a < 1.0) {
+			vec3 matte = vec3(1.0, 0.92, 0.85);
+			float a2 = a * 1.0;
+			float sunDistance = (sunSize / r.x) * 0.85;
+			float p = 1.0 - (abs(pos.x - 0.5) / sunDistance);
+			if (p > 0.0) {
+				a2 = a * 0.0;
+			}
+			textureColor = vec4((textureColor.rgb * a2) + (matte * (1.0 - a2)), a);
+		}
+		gl_FragColor = vec4(textureColor.rgb * textureColor.a, textureColor.a);
+	}
+</script>
+<script src="main.js"></script>
+
+</html>
