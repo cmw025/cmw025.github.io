@@ -370,4 +370,72 @@ nav {
     background-image: url("img/text.gif");
     background-size: cover;
 }
-}
+
+@media (max-width:768px) {
+    .Scene-sky {
+        background-size: 100% 97%;
+        background-repeat: repeat-x;
+        background-color: #ffeddb
+    }
+    .Nav-link {
+        font-size: 16px;
+        margin: 0;
+        padding: 10px 20px
+    }
+    body {
+        font-size: 16px
+    }
+    section {
+        padding-bottom: 50px;
+        margin-bottom: 30px
+    }
+    .Header {
+        height: 75vh;
+        margin-bottom: 60px
+    }
+    .container {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box
+    }
+    .Title {
+        font-size: 40px
+    }
+    h2 {
+        font-size: 35px;
+        line-height: 1;
+        padding-top: 30px;
+    }
+    h2::after {
+        margin-top: 18px;
+        transform: scale(.8, .8)
+    }
+    .Title-Center {
+        width: 100%;
+        text-align: center
+    }
+    .Title-Center-left,
+    .Title-Center-right {
+        margin-right: 0;
+        position: static
+    }
+    .Title {
+        letter-spacing: 0;
+        text-transform: none
+    }
+    .Title-small {
+        letter-spacing: 0;
+        text-transform: none;
+        font-size: .7em
+    }
+    .Scene-mountains {
+        height: 200px;
+        margin-bottom: -100px
+    }
+    .Scene--bottom {
+        height: 100px
+    }
+    .Scene-mountains--bottom {
+        margin-bottom: 0
+    }
